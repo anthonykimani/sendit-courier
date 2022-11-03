@@ -9,7 +9,7 @@ export const createPost = createAsyncThunk(
   "signup/createPost",
   async (user) => {
     try {
-      let request = await fetch("/signup", {
+      let request = await fetch("https://sendit-courier-app.herokuapp.com/signup", {
         method: "POST",
         headers: {
           Accept: "application/json",

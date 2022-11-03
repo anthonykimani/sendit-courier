@@ -23,17 +23,7 @@ function Deliveries() {
 
   useEffect(() => {
     const getData = async () => {
-      // let userRequest = await fetch("http://localhost:3000/me");
-      // let userRequestData = await userRequest.json();
-      // await console.log(userRequestData);
-      // if(userRequest.ok){
-      //   await setUser(userRequestData);
-      //   await dispatch(setCurrentUser(userRequestData));
-      // }
-      // if(!!currentUser){
-      //   navigate("/")
-      // }
-      let request = await fetch("/parcels");
+      let request = await fetch("https://sendit-courier-app.herokuapp.com/parcels");
       let data = await request.json();
       // console.log(data);
       if(request.ok){

@@ -19,7 +19,7 @@ function Edit({ id, parcel, setLocation }) {
   function handleUpdateClick(e) {
     e.preventDefault();
     // console.log(id);
-    let url = `/parcels/${id}`;
+    let url = `https://sendit-courier-app.herokuapp.com/parcels/${id}`;
     fetch(url, {
       method: "PATCH",
       headers: {

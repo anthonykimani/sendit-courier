@@ -6,7 +6,7 @@ export let userData = null;
 // using redux to login user by retrieving their information from the database
 export const loginUser = createAsyncThunk("login/loginUser", async (user) => {
   try {
-    let request = await fetch("/login", {
+    let request = await fetch("https://sendit-courier-app.herokuapp.com/login", {
         method: "POST",
         headers: {
           Accept: "application/json",

@@ -22,7 +22,7 @@ const NavBar = () => {
 
   useEffect(() => {
    const fetchUser = async ()=>{
-    let fetchedUser = await fetch("/me")
+    let fetchedUser = await fetch("https://sendit-courier-app.herokuapp.com/me")
     let fetched = await fetchedUser.json()
     if(fetchedUser.ok){
       setUser(fetched);

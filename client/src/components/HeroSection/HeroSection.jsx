@@ -24,7 +24,7 @@ const HeroSection = () => {
           <button
             className="active:border-2 text-base active:bg-white active:text-blue-800 mr-2 border-2 border-white px-3 rounded-full font-open hover:bg-white hover:text-blue-900"
           >
-            <a href="http://localhost:3000/admin">Admin</a>
+            <a href="https://sendit-courier-app.herokuapp.com/admin">Admin</a>
           </button>
           <button
             className="active:border-2 active:bg-white active:text-blue-800 mr-2 border-2 border-white px-3 rounded-full font-open text-base hover:bg-white hover:text-blue-900"

@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 // using redux to login user by retrieving their information from the database
 export const logoutUser = createAsyncThunk("logout/logoutUser", async () => {
   try {
-    let request = await fetch("/logout", {
+    let request = await fetch("https://sendit-courier-app.herokuapp.com/logout", {
         method: "DELETE",
         headers: {
           Accept: "application/json",

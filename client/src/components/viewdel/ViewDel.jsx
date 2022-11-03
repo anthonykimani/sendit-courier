@@ -14,7 +14,7 @@ function ViewDel() {
 
   useEffect(() => {
     const getData = async () => {
-      let request = await fetch(`/parcels/${id}`);
+      let request = await fetch(`https://sendit-courier-app.herokuapp.com/parcels/${id}`);
       let data = await request.json();
       // console.log(data);
       setParcel(data);
@@ -24,7 +24,7 @@ function ViewDel() {
   }, []);
 
   function handleDeleteClick(e) {
-    let url = `/parcels/${e.target.id}`;
+    let url = `https://sendit-courier-app.herokuapp.com/parcels/${e.target.id}`;
     fetch(url, {
       method: "DELETE",
     })

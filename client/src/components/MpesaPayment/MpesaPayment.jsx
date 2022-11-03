@@ -5,7 +5,7 @@ const MpesaPayment = ({ choose }) => {
 
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/stkpush", {
+    fetch("https://sendit-courier-app.herokuapp.com/stkpush", {
       method: "POST",
       headers: {
         "content-type": "application/json",
